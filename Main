@@ -1,0 +1,25 @@
+public class FctAttribute {
+	
+public static ItemStack AddAtrib(ItemStack item, double damage, double health, double speed, double knowback) {
+		
+		Attributes attributes = new Attributes(item);
+		
+		if(damage != 0) attributes.add(Attributes.Attribute.newBuilder().name("Damage")
+			       .type(Attributes.AttributeType.GENERIC_ATTACK_DAMAGE).amount(damage).build());
+		
+		if(health != 0) attributes.add(Attributes.Attribute.newBuilder().name("Health")
+                    .type(Attributes.AttributeType.GENERIC_MAX_HEALTH).amount(health).build());
+		   
+		if(speed != 0) attributes.add(Attributes.Attribute.newBuilder().name("Speed")
+				      .type(Attributes.AttributeType.GENERIC_MOVEMENT_SPEED).amount(speed).operation(Operation.ADD_PERCENTAGE).build());
+		   
+		if(knowback != 0) attributes.add(Attributes.Attribute.newBuilder().name("KnockBack")
+			       .type(Attributes.AttributeType.GENERIC_KNOCKBACK_RESISTANCE).amount(knowback).operation(Operation.ADD_NUMBER).build()); 
+		   
+		   
+		   return attributes.stack;
+		   
+		
+	}
+	
+	}
