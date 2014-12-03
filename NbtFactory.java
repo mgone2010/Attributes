@@ -1,4 +1,4 @@
-package info.mgone.survie.gui.AttributesLore;
+
 
 import java.io.BufferedInputStream;
 import java.io.DataInput;
