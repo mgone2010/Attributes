@@ -1,4 +1,3 @@
-package info.mgone.survie.gui.AttributesLore;
 
 import java.util.Collections;
 import java.util.Iterator;
@@ -9,9 +8,6 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 import org.bukkit.inventory.ItemStack;
-
-import info.mgone.survie.gui.AttributesLore.NbtFactory.NbtCompound;
-import info.mgone.survie.gui.AttributesLore.NbtFactory.NbtList;
 
 import com.google.common.base.Function;
 import com.google.common.base.Objects;
